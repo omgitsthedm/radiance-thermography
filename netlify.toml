@@ -1,0 +1,25 @@
+# Netlify Configuration — Radiance Thermography
+# Added during AI-Ops onboarding (2026-06-28). Declares the publish dir and
+# keeps internal AI-Ops docs private (site is published from repo root).
+
+[build]
+  publish = "."
+
+# AI-Ops: keep internal docs private (publish = ".")
+[[redirects]]
+  from = "/.ai/*"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/CLAUDE.md"
+  to = "/404"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/AGENTS.md"
+  to = "/404"
+  status = 404
+  force = true
